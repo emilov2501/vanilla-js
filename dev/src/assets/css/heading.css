@@ -1,0 +1,12 @@
+.heading .heading__title {
+  color: var(--heading);
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.heading hr {
+  border: none;
+  border-bottom: 1px solid var(--heading)
+}

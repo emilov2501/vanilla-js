@@ -1,0 +1,126 @@
+.category .category__heading {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--category-heading);
+  opacity: .9;
+  position: relative;
+  overflow: hidden;
+}
+
+.category__heading::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-left: 5px;
+  border-bottom: 0.5px dotted var(--category-heading);
+}
+
+.category .category__input .input {
+  width: 250px;
+}
+
+.category .category__input .button--show {
+  display: inline-block;
+}
+
+.category__button {
+  display: none;
+}
+
+
+.categories {
+  margin: 0;
+  margin-top: 1rem;
+  padding: 0;
+  list-style-type: none;
+}
+.categories .category__item {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories .category__item .category__complain {
+  font-size: 13px;
+  color: var(--category-heading);
+  user-select: none;
+  cursor: pointer;
+}
+
+.categories .category__item:hover .close-icon{
+  visibility: visible;
+}
+.categories .category__item:hover .add-icon{
+  visibility: visible;
+}
+
+.categories .category__item .title {
+  color: var(--category-item-color);
+  font-size: 14px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.categories .category__item .title:hover {
+  text-decoration: underline;
+}
+.categories .category__item .close-icon {
+  background-image: url('../img/close.png');
+  background-repeat: no-repeat;
+}
+.categories .category__item .add-icon {
+  background-image: url('../img/close.png');
+  background-repeat: no-repeat;
+  transform: rotate(45deg);
+}
+
+.categories .category__item .shared {
+  background-image: url('../img/ok.png');
+  background-repeat: no-repeat;
+  transform: rotate(0);
+  width: 12px;
+  height: 12px;
+  visibility: visible
+
+}
+
+.categories .category__item .complain {
+  background-image: url('../img/warn.png');
+  background-repeat: no-repeat;
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  margin-right: 2px;
+}
+.categories .category__item .category__complain {
+  display: none;
+}
+
+.icon {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 2px;
+  visibility: hidden
+}
+
+.category__item:hover .category__complain{
+  display: block;
+}
+
+.category__collapse {
+  margin-left: 16px;
+  font-size: 13px;
+  color: orange;
+  cursor: pointer;
+  user-select: none;
+  display: inline;
+}
+
+.category__collapse--hover:hover {
+  color: #e27e0b;
+  border-bottom: 1px dotted #e27e0b;
+}

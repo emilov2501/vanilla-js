@@ -1,0 +1,19 @@
+.category__input .input {
+  border-radius: 2px;
+  padding: var(--input-button-padding) 9px;
+  border: 1px solid var(--category-heading);
+  outline: none;
+  font-size: 16px;
+}
+
+.input--remove-placeholder:focus::placeholder {
+  color: transparent;
+}
+
+.form--invalid {
+  border: 2px solid red!important;
+}
+
+.form--invalid::placeholder{
+  color: red
+}

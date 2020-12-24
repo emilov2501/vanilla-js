@@ -1,0 +1,15 @@
+.btn {
+  border: none;
+  padding: var(--input-button-padding) 25px;
+  outline: none;
+  background: linear-gradient(rgb(223, 221, 221), rgb(189, 189, 189));
+  border-radius: 2px;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 1.5px 0px 0 #999;
+  transition: all .5s;
+}
+
+.button--active:active {
+  background: linear-gradient(rgb(175, 175, 175), rgb(190, 190, 190));
+}

@@ -1,0 +1,7 @@
+:root {
+  --heading: #333333;
+  --category-heading: #444444;
+  --input-button-padding: 7px;
+  --category-item-color: rgb(52, 172, 52);
+  --default-font: Arial, sans-serif;
+}
